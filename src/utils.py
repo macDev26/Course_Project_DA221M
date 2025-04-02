@@ -1,3 +1,4 @@
+# Utility functions for the course project word guessing game
 import requests
 
 def calculate_bert_similarity_batch(phrase, words, api_url, headers):
