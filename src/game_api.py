@@ -5,9 +5,12 @@ import os
 
 class GameAPI:
     def __init__(self, api_key=None):
+        # Set up default API key if not provided by user
         self.api_key = api_key or "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"
+        # Define API endpoints for HuggingFace models
         self.bert_api_url = "https://api-inference.huggingface.co/models/sentence-transformers/all-MiniLM-L6-v2"
         self.mistral_api_url = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3"
+        # Set up auth headers for POST requests
         self.headers = {"Authorization": f"Bearer {self.api_key}"}
     
     def get_hidden_word_and_hint(self, difficulty):
