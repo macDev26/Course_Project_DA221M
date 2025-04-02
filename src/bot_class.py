@@ -7,14 +7,18 @@ class RLWordGuessingBot:
     def __init__(self, base_vocab_size=100, api_key=None):
         self.vocab = self._load_initial_vocabulary(base_vocab_size)
         self.vocab_similarity_scores = {}
+        # Graph representing semantic connections between words
         self.word_graph = nx.Graph()
         self.api_key = api_key or "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"
         self.bert_api_url = "https://api-inference.huggingface.co/models/sentence-transformers/all-MiniLM-L6-v2"
+        # Epsilon-greedy exploration probability
         self.exploration_rate = 0.2
         self.bert_headers = {"Authorization": f"Bearer {self.api_key}"}
+        # Discount factor for future reinforcement learning rewards
         self.discount_factor = 0.9
         self.current_game_history = []
         self.session_history = []
+        # Metrics to evaluate performance across the playing session
         self.game_stats = {
             "games_played": 0,
             "games_won": 0,
