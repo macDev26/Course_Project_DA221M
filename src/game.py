@@ -10,9 +10,11 @@ def human_bot_game(api_key=None):
     bot = RLWordGuessingBot(base_vocab_size=100, api_key=api_key)
     bot = inject_similarity_methods(bot)
     
+    # Initialize session control variables
     session_active = True
     session_games = 0
     
+    # Track statistics for the session (wins and attempt history)
     human_stats = {"wins": 0, "attempts": []}
     bot_stats = {"wins": 0, "attempts": []}
     
