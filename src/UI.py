@@ -11,7 +11,7 @@ from bot_class import RLWordGuessingBot
 from game_api import GameAPI
 from utils import inject_similarity_methods
 
-# Set page config
+# Configure the Streamlit web application layout and title
 st.set_page_config(
     page_title="Guess.io - AI vs Human",
     page_icon="🔤",
