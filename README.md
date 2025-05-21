@@ -1,6 +1,6 @@
 # Guess.io : Word Guessing Game
 
-A word guessing game where you compete against an AI bot that learns from each game using reinforcement learning techniques.
+A word guessing game where you compete against an AI bot that learns from each game using reinforcement learning techniques. Check out project [Report](https://drive.google.com/file/d/1uHoVD23NSCuRlB-kJq_KRzXgf7IBnfS4/view?usp=sharing).
 
 ## Features
 
