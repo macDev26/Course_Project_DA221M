@@ -1,5 +1,6 @@
 import random
 import networkx as nx
+
 from collections import defaultdict
 
 class RLWordGuessingBot:
