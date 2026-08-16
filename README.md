@@ -10,7 +10,7 @@ A word guessing game where you compete against an AI bot that learns from each g
 - **AI-Powered Word Suggestions**: Receive intelligent suggestions based on your guesses
 - **RL Bot Learning**: Watch as the bot learns from its experiences across game sessions
 - **Dynamic Vocabulary**: The bot expands and refines its vocabulary based on game outcomes
-- **Session Statistics**: Track performance across multiple games in a session
+- **Session Statistics**: Track performance across multiple games in a session.
 
 ## Installation
 
